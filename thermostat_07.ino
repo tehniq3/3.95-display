@@ -149,7 +149,9 @@ void setup(void) {
     
     ultimultimp = millis();
 tft.setRotation(1);  // landscape
-
+  
+    Wire.begin();
+    
 http://www.hobbytronics.co.uk/arduino-external-eeprom
 limburus = readEEPROM(disk1, 0), DEC;
 if (limburus > 1) limburus = 1;
@@ -206,7 +208,7 @@ else
             tft.println("(niq_ro)");      
 }
   delay(3000);
-  Wire.begin();
+
  
 pinMode(robinet1, INPUT);  // valve button
 pinMode(etaj, INPUT);   // floor button
