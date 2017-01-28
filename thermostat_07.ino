@@ -211,8 +211,8 @@ else
 
  
 pinMode(robinet1, INPUT);  // valve button
-pinMode(etaj, INPUT);   // floor button
-pinMode(parter, INPUT);   // ground button
+pinMode(etaj, OUTPUT);   // floor relay
+pinMode(parter, OUTPUT);   // ground relay
 digitalWrite(robinet1, HIGH);  
 digitalWrite(etaj, HIGH);  
 digitalWrite(parter, HIGH);  
