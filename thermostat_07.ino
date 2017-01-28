@@ -214,8 +214,8 @@ pinMode(robinet1, INPUT);  // valve button
 pinMode(etaj, OUTPUT);   // floor relay
 pinMode(parter, OUTPUT);   // ground relay
 digitalWrite(robinet1, HIGH);  
-digitalWrite(etaj, HIGH);  
-digitalWrite(parter, HIGH);  
+digitalWrite(etaj, LOW);  
+digitalWrite(parter, LOW);  
 
 pinMode(meniu, INPUT);   // MENU button
 pinMode(plus, INPUT);   // + button
